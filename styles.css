@@ -1,0 +1,439 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.left_box{
+    width: 23vw;
+    height: 85vh;
+    margin-top: 10px;
+}
+.right_box{
+    width: 75vw;
+    height: 85vh;
+    margin-top: 10px;
+}
+.search{
+    width:23vw;
+    height:30%;
+    background-color: #121212;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1vw;
+}
+.libary{
+    width: 23vw;
+    height:68% ;
+    background-color: #121212;
+    border-radius: 10px;
+    position: relative;
+    top:9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.nav{
+    width: 75vw;
+    height: 12%;
+    background-color: #101010;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.main{
+    width: 75vw;
+    height: 88%;
+    background-color: #121212;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: inset 0px 71px 100px 0px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 8px 20px;
+    overflow-y:auto;
+}
+.nav .item1{
+    color: whitesmoke;
+    font-size: 27px;
+    display: flex;
+    gap:15px;
+    margin-left: 30px;
+}
+.item1 i{
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+.nav .reg{
+    display: flex;
+    gap: 35px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav .reg a{
+    color: white;
+    text-decoration: none;
+}
+.nav .reg .item3 {
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    padding: 10px 27px;
+    cursor:pointer;
+    border-radius: 25px;
+    background-color: white;
+    transition: all 0.1s linear;
+}
+.nav .reg .item3:hover {
+    transform: scale(1.1);
+}
+.nav .reg .item3 a{
+    color: #101010;
+}
+.item2{
+    padding: 10px;
+    opacity: 0.7;
+    transition: all 0.1s linear;
+    font-size: 18px;
+}
+.item2:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.search .logo{
+    padding-left: 20px;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.search .logo a i{
+    font-size: 25px;
+}
+.search .logo a{
+    color: white;
+    text-decoration: none;
+}
+.search .logo a span{
+    font-size: 18px;
+    font-weight: 450;
+}
+.home a{
+    display: flex;
+    align-items: center;
+}
+.home a i{
+    font-size: 22px;
+    font-weight: 600;
+}
+.search .home{
+    padding-left: 10px;
+}
+.search .home ul{
+    list-style-type: none;
+}
+.search .home a{
+    text-decoration: none;
+    color: white;
+}
+.search .home li{
+    padding: 10px;
+}
+.search .home #srch{
+    opacity: 0.5;
+}
+.search .home #srch:hover{
+    opacity: 1;
+}
+.search .home i{
+    margin-right: 25px;
+}
+.search .home span{
+    font-size: 17px;
+    font-weight: 600;
+}
+.libary .lib{
+    height: 50px;
+    padding: 15px 20px;
+    font-size: 22px;
+    width: 23vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.libary .lib a{
+    color: white;
+    text-decoration: none;
+}
+.libary .lib i{
+    margin-right: 15px;
+    margin-left: 10px;
+}
+.libary .lib #but2{
+    opacity: 0.5;
+}
+.libary .lib #but2:hover{
+    opacity: 1;
+}
+.libary .lib #butt1{
+    border-radius: 50%;
+    padding: 0px 6px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    font-size: 20px;
+    opacity: 0.5;
+}
+.libary .lib #butt1:hover{
+    background-color:rgba(255, 255, 255, 0.046);
+    opacity: 0.9;
+}
+.libary .playcard{
+    display: flex;
+    flex-direction: column;
+    width: 21vw;
+    height: 50%;
+    color: white;
+    background-color: #242424;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 15px;
+    padding-bottom: 25px;
+    margin: auto;
+}
+.play1 #txt1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.libary .playcard .play2 a{
+    text-decoration: none;
+    color: #121212;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+}
+.libary .playcard .play2{
+    transition: all 0.1s linear;
+}
+.libary .playcard .play2:hover{
+    transform: scale(1.05);
+}
+.libary .lan a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px 15px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+.libary .lan:hover{
+    transform: scale(1.02);
+}
+.footer {
+    width: 99vw;
+    height: 11%;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #2B86C5 0%, #784BA0 50%, #FF3CAC 100%);
+    padding: 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .tp{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center; 
+    line-height: 23px;
+}
+.footer .tp #ps{
+    font-size: 1.1vw;
+    font-weight: 800;
+}
+.footer .tp #su{
+    font-size: 1.2vw;
+    font-weight: 450;
+}
+.footer a{
+    padding: 1vw 2vw ;
+    border-radius: 50px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: all 0.1s linear;
+}
+.footer a:hover{
+    transform: scale(1.05);
+}
+.main .title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    margin-bottom: 10px;
+}
+.main .title a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.main .title #other{
+    padding-top: 5px;
+    font-size: 18px;
+    opacity: 0.5;
+}
+.main .title #other:hover{
+    text-decoration: underline;
+}
+#topic:hover{
+    text-decoration: underline;
+}
+.main .card{
+    display: flex;
+    justify-content: space-evenly;
+}
+.main .card .items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    background-color: #181818;
+    width: 185px;
+    height: 270px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.main .card .items:hover{
+    background-color: #242424;
+}
+.main .card .items img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+} 
+.main .card .items .play{
+    color: black;
+    border-radius: 50%;
+    padding: 16px 20px;
+    background-color: rgb(39, 195, 39);
+    position: absolute;
+    top:130px;
+    left: 120px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s;
+}
+.main .card .items:hover .play{
+    opacity: 1;
+    transform: translateY(0);
+}
+.main .card .items h3{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.main .card .items span{
+    color: white;
+    opacity: 0.5;
+}
+.main .india{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    margin-bottom: 10px;
+}
+.main .india a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.main .india #other1{
+    padding-top: 5px;
+    font-size: 18px;
+    opacity: 0.5;
+}
+.main .india #other1 :hover{
+    text-decoration: underline;
+}
+.main .album{
+    display: flex;
+    justify-content: space-evenly;
+}
+.main .album .music{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    width: 200px;
+    height: 270px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.main .album .music:hover{
+    background-color: #181818;
+}
+.main .album .music img{
+    width: 180px;
+    height: 190px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.main .album .music h3{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.main .links #last{
+    color: white;
+    font-size: 17px;
+    opacity: 0.5;
+}
+#break{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    opacity: 0.4;
+}
+.main .album .music .play1{
+    color: black;
+    border-radius: 50%;
+    padding: 16px 20px;
+    background-color: rgb(39, 195, 39);
+    position: absolute;
+    top:145px;
+    left: 133px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s;
+}
+.main .album .music:hover .play1{
+    opacity: 1;
+    transform: translateY(0);
+}
